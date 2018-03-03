@@ -6,13 +6,13 @@ let books=["The Hunger Games","To Kill a Mockingbird","Twilight (Twilight, #1)",
 
 //step3
 function generating() {
-    let listOfBooks = document.createElement("ul")
+    let li = document.createElement("ul")
 
     for (let i = 0; i < books.length; i++) {
         "use strict";
-        let booksItems = document.createElement("listOfBooks")
-        booksItems.textContent = books[i]
-        listOfBooks.appendChild(booksItems)
+        let ul = document.createElement("li")
+        ul.textContent = books[i]
+        li.appendChild(ul)
 
     };
 

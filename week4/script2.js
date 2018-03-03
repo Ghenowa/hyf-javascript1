@@ -70,7 +70,7 @@ let bookDetails = {
 };
     
 //step5
-function render() {
+function generate() {
     let ul = document.createElement("ul");
     for (let i in books) {
         let book = books[i];

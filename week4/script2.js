@@ -6,16 +6,24 @@ let books=["The Hunger Games","To Kill a Mockingbird","Twilight (Twilight, #1)",
 
 //step3
 function generating() {
-    "use strict";
-    let ul = document.createElement("ul");
-    for (var i in books) {
-        let book = books[i];
-        let li = document.createElement("li");
-        li.innerHTML = book;
-        ul.appendChild(li);
+    let listOfBooks = document.createElement("ul")
+
+    for (let i = 0; i < books.length; i++) {
+        "use strict";
+        let booksItems = document.createElement("listOfBooks")
+        booksItems.textContent = books[i]
+        listOfBooks.appendChild(booksItems)
+
+    };
+
+    let body = document.getElementById("main2")
+    body.appendChild(li)
+
+
+    console.log(li)
+
 }
-document.body.appendChild(ul);
-};
+generating();
 
 //step4
 let bookDetails = {

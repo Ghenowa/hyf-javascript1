@@ -69,25 +69,8 @@ let bookDetails = {
     }
 };
     
-//step5
-function generate() {
-    let ul = document.createElement("ul");
-    for (let i in books) {
-        let book = books[i];
-        let bookDetail = bookDetails[book];
-        let title = bookDetail.title;
-        let language = bookDetail.language;
-        let li = document.createElement("li");
-        let elementTitle = document.createElement("h2");
-        elementTitle.innerHTML = title;
-        let elementLanguage = document.createElement("span");
-        elementLanguage.innerHTML = language;
-        elementTitle.appendChild(elementLanguage);
-        li.appendChild(elementTitle);
-        ul.appendChild(li);
-    }
-    document.body.appendChild(ul);
-};
+
+
 
 //step6
 
